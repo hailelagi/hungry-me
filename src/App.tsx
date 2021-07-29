@@ -1,12 +1,13 @@
 import React from 'react';
+import Home from "./components/Home"
 import './App.css';
+
+// let Home = (p: Route)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Hungry-me
-      </header>
+      <Home />
     </div>
   );
 }
