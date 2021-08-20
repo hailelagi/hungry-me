@@ -1,8 +1,7 @@
 # Hungry-me
 
-[<img src="https://img.shields.io/github/license/hailelagi/hungry-me" alt="license badge"/>](License)
-[<img src="https://img.shields.io/github/repo-size/hailelagi/hungry-me" alt="size badge"/>](Size)
-[<img src="https://img.shields.io/github/languages/top/hailelagi/hungry-me" alt="language badge"/>](Language)
+[![GitHub license](https://img.shields.io/github/license/hailelagi/hungry-me)](https://github.com/hailelagi/hungry-me)
+![GitHub top language](https://img.shields.io/github/languages/top/hailelagi/hungry-me)
 
 Foodie explore app. Powered by the [spoonacular API](https://spoonacular.com/food-api).
 
