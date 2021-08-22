@@ -1,24 +1,63 @@
 import React from "react";
 import styled from 'styled-components';
-// import { Link } from "react-router-dom";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 export default function Nav(){
   return (
-    <NavBar>
-      <img src="" alt=""/>
-      <ul>
-        <li>home</li>
-        <li>explore</li>
-        <button>what to eat?</button>
-      </ul>
-    </NavBar>
+      <Router>
+          <NavBar>
+              <Link to="/"><h1>Hungry.me</h1></Link>
+              <ul>
+                  <Link to="/"><li>home</li></Link>
+                  <Link to="/explore"><li>explore</li></Link>
+                  <Link to="/recommend"><button>what to eat?</button></Link>
+              </ul>
+          </NavBar>
+      </Router>
+
+
   );
 }
 
 const NavBar = styled.nav`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  
   ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
     text-decoration: none;
-    text-transform: captilize;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: large;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  
+  ul li {
+    margin: 0.5em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  button {
+    padding: 0.8em;
+    font-size: medium;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  button:hover {
   }
 
   @media only screen and (max-width: 500px) {
