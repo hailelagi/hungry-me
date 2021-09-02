@@ -12,5 +12,6 @@ export default function Footer() {
 const FooterWrapper = styled.footer`
   text-align: center;
   padding: 1em;
-  margin: 0.2em;
+  background-color: var(--secondary);
+  color: var(--background);
 `;

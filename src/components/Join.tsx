@@ -17,7 +17,7 @@ export default function Join() {
 const JoinWrapper = styled.div`
   text-align: center;
   background-color: #00AA55;
-  padding: 2em;
+  padding: 3em;
   font-size: larger;
   
   p {

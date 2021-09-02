@@ -1,21 +1,18 @@
 import React from "react";
 import styled from 'styled-components';
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Nav(){
   return (
-      <Router>
-          <NavBar>
-              <Link to="/"><h1>Hungry.me</h1></Link>
-              <ul>
-                  <Link to="/"><li>home</li></Link>
-                  <Link to="/explore"><li>explore</li></Link>
-                  <Link to="/recommend"><button>what to eat?</button></Link>
-              </ul>
-          </NavBar>
-      </Router>
-
-
+      <NavBar>
+          <Link to="/"><h1>Hungry.me</h1></Link>
+          <ul>
+              <Link to="/"><li>home</li></Link>
+              <Link to="/explore"><li>explore</li></Link>
+              {/*TODO: dynamic protected route - recommend */}
+              <Link to="/signup"><button>what to eat?</button></Link>
+          </ul>
+      </NavBar>
   );
 }
 

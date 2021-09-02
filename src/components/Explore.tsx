@@ -6,7 +6,6 @@ import Card from "./Card";
 export default function Explore() {
   return (
     <ExploreWrapper >
-      <Nav />
         <Card />
     </ExploreWrapper>
   );

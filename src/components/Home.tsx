@@ -8,7 +8,6 @@ import Footer from "./Footer";
 export default function Home() {
   return (
     <>
-      <Nav />
       <Banner>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcot enim ad minim veniam, quis nostrud
