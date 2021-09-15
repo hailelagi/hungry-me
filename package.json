@@ -12,7 +12,12 @@
   "dependencies": {
     "apollo-server-core": "^3.3.0",
     "apollo-server-express": "^3.3.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "graphql": "^15.5.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
   }
 }
