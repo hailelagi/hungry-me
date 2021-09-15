@@ -8,6 +8,6 @@ Foodie explore app. Powered by the [spoonacular API](https://spoonacular.com/foo
 ## Start here!
 - clone the repository
 
-- run `yarn` to install dependencies assuming you have node.js and typescript.
-
-- run `yarn start` to start the client development server :)
+- run `yarn && cd ./client && yarn` to install dependencies assuming you have node.js and typescript.
+- `cd ..` to the root and then
+- run `yarn start` to start the apollo-express development server

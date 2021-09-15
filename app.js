@@ -28,15 +28,17 @@ async function startApolloServer(typeDefs, resolvers) {
     server.applyMiddleware({ app });
     await new Promise(resolve => httpServer.listen({ port: 4000 }, resolve));
 
-    app.get('/robots.txt', (req, res) =>
-        res.sendFile('robots.txt', {root: __dirname + '/../client/public'}));
-
-    app.get('/', (req, res) =>
-        res.sendFile('index.html', {root: __dirname+'/../client/public'}));
-
-
     console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
 
+    /*
+    app.get('/robots.txt', (req, res) =>
+        res.sendFile('robots.txt', {root: __dirname + ''})
+    ); */
+
+    app.get('/', (req, res) =>
+        //res.sendFile('index.html', {root: __dirname+'/../client/build'})
+        res.send("TODO :(")
+    );
 }
 
 startApolloServer(typeDefs, resolvers);
