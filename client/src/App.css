@@ -1,0 +1,38 @@
+/*Web safe color theme thanks to colorsafe.co*/
+
+:root {
+  --primary-dark: #050709;
+  --primary: #00AA55;
+  --secondary: #114C2A;
+  --background: #fff;
+  --shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+  --lightshadow: 0 2px 7px 0 rgba(45, 51, 58, 0.16);
+  --grey: #808080;
+}
+
+/*Global styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  /*TODO: use custom font */
+  font-family: sans-serif;
+  background-color: var(--background);
+  color: var(--primary-dark);
+  height: 100%;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  justify-self: center;
+}
+
+/* entire app is a big flex :) */
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
