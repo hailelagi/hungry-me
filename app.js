@@ -1,4 +1,3 @@
-
 import { ApolloServer, gql } from 'apollo-server-express';
 import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core';
 import express from 'express';
@@ -36,6 +35,7 @@ async function startApolloServer(typeDefs, resolvers) {
     ); */
 
     app.get('/', (req, res) =>
+        // TODO: server react production build
         //res.sendFile('index.html', {root: __dirname+'/../client/build'})
         res.send("TODO :(")
     );
